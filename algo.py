@@ -2,7 +2,6 @@ import random
 import time
 
 base = [[], [], []]
-
 def main():
 	# First step
 	time1 = 0
@@ -12,7 +11,9 @@ def main():
 		for n2 in range(1, 11):
 			t = random.uniform(.1, 3.9)
 			time.sleep(t)
-			num = random.randint(10000000000000000000, 99999999999999999999)
+			num = random.randint(
+			10000000000000000000,
+			99999999999999999999)
 			base[n-1].append(num)
 			print(f"Algorithm: {num}")
 			timeH[n-1] += t
@@ -31,5 +32,6 @@ def main():
 	# Third step
 	print(f"Pairing of 1 and 2 sets has been completed in {time3}s")
 	
+
 if __name__ == '__main__':
 	main()
